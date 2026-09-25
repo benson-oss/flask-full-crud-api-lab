@@ -11,11 +11,13 @@ class Event:
     def to_dict(self):
         return {"id": self.id, "title": self.title}
 
+
 # In-memory "database"
 events = [
     Event(1, "Tech Meetup"),
     Event(2, "Python Workshop")
 ]
+
 
 #Helper functin to find an event by id
 def find_event(event_id):
